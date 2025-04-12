@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iPhone 15 Pro Advertisement</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .ad-container {
+      display: flex;
+      flex-direction: row;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      overflow: hidden;
+      max-width: 900px;
+      width: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    .ad-container:hover {
+      transform: scale(1.02);
+    }
+
+    .ad-image {
+      flex: 1;
+      background-color: #f1f5f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .ad-image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .ad-content {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .ad-title {
+      font-size: 2.5rem;
+      color: #111827;
+      margin-bottom: 10px;
+    }
+
+    .ad-subtitle {
+      font-size: 1.1rem;
+      color: #4b5563;
+      margin-bottom: 20px;
+    }
+
+    .price {
+      font-size: 1.8rem;
+      color: #16a34a;
+      margin-bottom: 25px;
+    }
+
+    .buy-button {
+      background-color: #0f172a;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: fit-content;
+    }
+
+    .buy-button:hover {
+      background-color: #1e293b;
+    }
+
+    @media (max-width: 768px) {
+      .ad-container {
+        flex-direction: column;
+      }
+
+      .ad-image, .ad-content {
+        width: 100%;
+      }
+
+      .ad-content {
+        padding: 30px 20px;
+        text-align: center;
+      }
+
+      .buy-button {
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ad-container">
+    <div class="ad-image">
+      <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-natural_AV1?wid=940&hei=1112&fmt=png-alpha&.v=1693346851411" alt="iPhone 15 Pro">
+    </div>
+    <div class="ad-content">
+      <h1 class="ad-title">iPhone 15 Pro</h1>
+      <p class="ad-subtitle">Titanium. So strong. So light. So Pro.</p>
+      <p class="price">Starting at $999</p>
+      <button class="buy-button">Buy Now</button>
+    </div>
+  </div>
+
+</body>
+</html>
